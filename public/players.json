@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Sakib Al Hasan",
+    "country": "Bangladesh",
+    "countryFlag": "https://flagsapi.com/BD/shiny/64.png",
+    "playerImg": "https://i.ibb.co.com/DHt8w7y7/shakib-al-hasan-smiling-8olow941lckcha6b.jpg",
+    "rating": 87,
+    "style": "Right-handed Batter",
+    "price": 120000
+  },
+  {
+    "id": 2,
+    "name": "Virat Kohli",
+    "country": "India",
+    "countryFlag": "https://flagsapi.com/IN/shiny/64.png",
+    "playerImg": "https://i.ibb.co.com/zWF6nj8t/01j7s44j46nrsd3b2qcy.webp",
+    "rating": 90,
+    "style": "Left-handed Bowler",
+    "price": 150000
+  },
+  {
+    "id": 3,
+    "name": "David Warner",
+    "country": "Australia",
+    "countryFlag": "https://flagsapi.com/AU/shiny/64.png",
+    "playerImg": "https://i.ibb.co.com/MyQS6qZs/David-Warner-4.jpg",
+    "rating": 82,
+    "style": "Right-handed All-Rounder",
+    "price": 200000
+  },
+  {
+    "id": 4,
+    "name": "Ben Stokes",
+    "country": "England",
+    "countryFlag": "https://flagsapi.com/GB/shiny/64.png",
+    "playerImg": "https://i.ibb.co.com/d4WQvz0n/ben-stokes-struck-a-match-winning-52-in-the-t20-world-cup-final.webp",
+    "rating": 78,
+    "style": "Left-handed Batter",
+    "price": 100000
+  },
+  {
+    "id": 5,
+    "name": "Shahen Shah Afridi",
+    "country": "Pakistan",
+    "countryFlag": "https://flagsapi.com/PK/shiny/64.png",
+    "playerImg": "https://i.ibb.co.com/hx7kRjRC/Afridi.jpg",
+    "rating": 85,
+    "style": "Right-handed Bowler",
+    "price": 130000
+  },
+  {
+    "id": 6,
+    "name": "Kane Willamson",
+    "country": "New Zealand",
+    "countryFlag": "https://flagsapi.com/NZ/shiny/64.png",
+    "playerImg": "https://i.ibb.co.com/nNt5Qffn/m-SUl-Zh-Vo1d.webp",
+    "rating": 92,
+    "style": "Left-handed All-Rounder",
+    "price": 220000
+  }
+]
