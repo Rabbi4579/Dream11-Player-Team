@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { FaBitcoin } from "react-icons/fa";
 
-const Header = () => {
+const Header = ({coin}) => {
+
+  
+
+
   return (
     <header className="fixed top-0 left-0 w-full bg-white px-5 py-4">
       <div className="max-w-[1320px] mx-auto flex justify-between items-center">
@@ -25,7 +29,7 @@ const Header = () => {
           </li>
 
           <div className="border border-gray-300 px-5 py-2 rounded-md text-[#131313] font-semibold text-[20px] flex items-center gap-2">
-            0 Coin <FaBitcoin className="text-yellow-400 text-2xl" />
+            {coin} Coin <FaBitcoin className="text-yellow-400 text-2xl" />
           </div>
         </ul>
       </div>
