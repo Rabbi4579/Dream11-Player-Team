@@ -2,24 +2,23 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Header from "./components/Header/Header";
-import Players from "./components/Players/Players";
 import { addCoin, stored } from "./Javascript/coinlocalStorage";
+import Players from "./components/Players/Players";
 
 function App() {
-
   const [coins, setCoins] = useState(0);
-
-  const handleCoin = () =>{
+  
+  const handleCoin = () => {
     const coin = 600000;
     const newCoin = coins + coin;
-    setCoins(newCoin)
-    addCoin(newCoin)
-  }
+    setCoins(newCoin);
+    addCoin(newCoin);
+  };
 
-  useEffect(() =>{
+  useEffect(() => {
     const storedCoin = stored();
-    setCoins(storedCoin)
-  },[])
+    setCoins(storedCoin);
+  }, []);
 
   return (
     <>

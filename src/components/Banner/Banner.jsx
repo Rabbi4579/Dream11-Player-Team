@@ -5,7 +5,7 @@ const Banner = ({handleCoin}) => {
   return (
     <div className="bg-black h-[545px]">
       <div
-        className=" h-[545px] w-full  bg-cover bg-center flex flex-col justify-center items-center text-center rounded-2xl"
+        className=" h-[545px] w-full  bg-cover bg-center flex flex-col justify-center items-center text-center"
         style={{ backgroundImage: `url(${shadow})` }}
       >
         
