@@ -14,34 +14,36 @@ const Players = () => {
   }, []);
 
   const handleSelect = (player) => {
-    console.log('Added player', player)
+    // console.log('Added player', player)
     if (!selectedPlayers.find((p) => p.id === player.id)) {
       setSelectedPlayers([...selectedPlayers, player]);
     }
   };
 
+  console.log(selectedPlayers)
+
   return (
     <div>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-5">
         <div>
           <div>Available Players</div>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center border border-[#131313]/10 rounded-md">
           <button
             onClick={() => setActive("A")}
             className={`px-4 py-2 ${
-              active === "A" ? "bg-amber-400" : "bg-white text-black"
+              active === "A" ? "bg-[#E7FE29] rounded-md" : "bg-white text-black"
             }`}
           >
             Availabe
           </button>
-          <button
+          <button 
             onClick={() => setActive("B")}
             className={`px-4 py-2 ${
-              active === "B" ? "bg-amber-400" : "bg-white text-black"
+              active === "B" ? "bg-[#E7FE29]" : "bg-white text-black"
             }`}
           >
-            Selected
+            {selectedPlayers.length} Selected
           </button>
         </div>
       </div>
@@ -49,7 +51,7 @@ const Players = () => {
 
       <div>
         {active === "A" && <Available players={players} handleSelect={handleSelect}></Available>}
-        {active === "B" && <Selected selected={selectedPlayers}></Selected>}
+        {active === "B" && <Selected selectedPlayers={selectedPlayers} players={players}></Selected>}
       </div>
     </div>
   );
