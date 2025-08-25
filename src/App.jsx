@@ -6,7 +6,7 @@ import Players from "./components/Players/Players";
 import { addToLS, savedToLS, storedCoins } from "./Utility/savedCoinsToLS";
 import { ToastContainer, toast } from "react-toastify";
 import { addedPlayers, savedPlayers } from "./Utility/storedSelectedPlayers";
-
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [players, setPlayers] = useState([]);
@@ -36,10 +36,10 @@ function App() {
     if (!selectedPlayers.find((p) => p.id === player.id)) {
       setSelectedPlayers([...selectedPlayers, player]);
     }
-    
+
     const savedPlaeyrsLS = savedPlayers();
     const existingPlayer = savedPlaeyrsLS.find((p) => p.id === player.id);
-    
+
     if (!existingPlayer) {
       const prevCoin = storedCoins();
       if (prevCoin >= player.price) {
@@ -50,30 +50,32 @@ function App() {
         toast("You have not enough money!");
       }
       addedPlayers(player);
-    }else{
-        toast.warning(`${player.name} is already Selected!!`, {position:"top-center"})
+    } else {
+      toast.warning(`${player.name} is already Selected!!`, {
+        position: "top-center",
+      });
     }
   };
 
-  useEffect(() =>{
-    const savedPlayersLS = savedPlayers()
-    setSelectedPlayers(savedPlayersLS)
-  },[])
-
-
-
+  useEffect(() => {
+    const savedPlayersLS = savedPlayers();
+    setSelectedPlayers(savedPlayersLS);
+  }, []);
 
   return (
     <>
-      <div className="max-w-[1320px] m-auto mt-8">
-        <ToastContainer />
-        <Header coins={coins}></Header>
-        <Banner handleCoins={handleCoins}></Banner>
-        <Players
-          players={players}
-          handleSelected={handleSelected}
-          selectedPlayers={selectedPlayers}
-        ></Players>
+      <div>
+        <div className="max-w-[1320px] m-auto mt-8">
+          <ToastContainer />
+          <Header coins={coins}></Header>
+          <Banner handleCoins={handleCoins}></Banner>
+          <Players
+            players={players}
+            handleSelected={handleSelected}
+            selectedPlayers={selectedPlayers}
+          ></Players>
+        </div>
+          <Footer></Footer>
       </div>
     </>
   );

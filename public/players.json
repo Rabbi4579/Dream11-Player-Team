@@ -64,5 +64,71 @@
     "style": "Batter",
     "price": 220000,
     "style2": "Left-Hand-Bat"
+  },
+   {
+    "id": 7,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "countryFlag": "https://flagsapi.com/AF/shiny/64.png",
+    "playerImg": "https://i.ibb.co/R9Kqf3Z/rashid-khan.jpg",
+    "rating": 88,
+    "style": "Bowler",
+    "price": 140000,
+    "style2": "Right-Hand-Bat"
+  },
+  {
+    "id": 8,
+    "name": "Joe Root",
+    "country": "England",
+    "countryFlag": "https://flagsapi.com/GB/shiny/64.png",
+    "playerImg": "https://i.ibb.co/0s2kzvT/joe-root.jpg",
+    "rating": 85,
+    "style": "Batter",
+    "price": 160000,
+    "style2": "Right-Hand-Bat"
+  },
+  {
+    "id": 9,
+    "name": "AB de Villiers",
+    "country": "South Africa",
+    "countryFlag": "https://flagsapi.com/ZA/shiny/64.png",
+    "playerImg": "https://i.ibb.co/TtBf7d1/ab-de-villiers.jpg",
+    "rating": 91,
+    "style": "Batter",
+    "price": 210000,
+    "style2": "Right-Hand-Bat"
+  },
+  {
+    "id": 10,
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "countryFlag": "https://flagsapi.com/AU/shiny/64.png",
+    "playerImg": "https://i.ibb.co/Z1gMkvM/mitchell-starc.jpg",
+    "rating": 83,
+    "style": "Bowler",
+    "price": 150000,
+    "style2": "Left-Hand-Bat"
+  },
+  {
+    "id": 11,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "countryFlag": "https://flagsapi.com/NZ/shiny/64.png",
+    "playerImg": "https://i.ibb.co/L0qKQ7K/trent-boult.jpg",
+    "rating": 84,
+    "style": "Bowler",
+    "price": 155000,
+    "style2": "Left-Hand-Bat"
+  },
+  {
+    "id": 12,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "countryFlag": "https://flagsapi.com/AU/shiny/64.png",
+    "playerImg": "https://i.ibb.co/Kx6wXhH/steve-smith.jpg",
+    "rating": 89,
+    "style": "Batter",
+    "price": 180000,
+    "style2": "Right-Hand-Bat"
   }
 ]

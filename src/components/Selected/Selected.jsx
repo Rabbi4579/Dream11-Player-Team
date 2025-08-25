@@ -2,7 +2,9 @@ import React from "react";
 import { AiOutlineDelete } from "react-icons/ai";
 
 const Selected = ({ selectedPlayers }) => {
-  console.log(selectedPlayers.length);
+
+  
+
   return (
     <div>
       {selectedPlayers.map((player) => (
@@ -26,6 +28,7 @@ const Selected = ({ selectedPlayers }) => {
           </div>
         </div>
       ))}
+      <button className="text-[16px] font-bold rounded-md ring ring-[#131313]/40 ring-offset-4 mb-[200px] px-6 py-2 text-center bg-[#E7FE29]">Add More Player</button>
     </div>
   );
 };
