@@ -7,7 +7,8 @@
     "playerImg": "https://i.ibb.co.com/DHt8w7y7/shakib-al-hasan-smiling-8olow941lckcha6b.jpg",
     "rating": 87,
     "style": "All-Rounder",
-    "price": 120000
+    "price": 120000,
+    "style2": "Left-Hand-Bat"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "playerImg": "https://i.ibb.co.com/zWF6nj8t/01j7s44j46nrsd3b2qcy.webp",
     "rating": 90,
     "style": "Batter",
-    "price": 150000
+    "price": 150000,
+    "style2": "Right-Hand-Bat"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "playerImg": "https://i.ibb.co.com/MyQS6qZs/David-Warner-4.jpg",
     "rating": 82,
     "style": "Batter",
-    "price": 200000
+    "price": 200000,
+    "style2": "Left-Hand-Bat"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "playerImg": "https://i.ibb.co.com/d4WQvz0n/ben-stokes-struck-a-match-winning-52-in-the-t20-world-cup-final.webp",
     "rating": 78,
     "style": "All-Rounder",
-    "price": 100000
+    "price": 100000,
+    "style2": "Left-Hand-Bat"
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "playerImg": "https://i.ibb.co.com/hx7kRjRC/Afridi.jpg",
     "rating": 85,
     "style": "Bowler",
-    "price": 130000
+    "price": 130000,
+    "style2": "Left-Hand-Bat"
   },
   {
     "id": 6,
@@ -57,6 +62,7 @@
     "playerImg": "https://i.ibb.co.com/nNt5Qffn/m-SUl-Zh-Vo1d.webp",
     "rating": 92,
     "style": "Batter",
-    "price": 220000
+    "price": 220000,
+    "style2": "Left-Hand-Bat"
   }
 ]

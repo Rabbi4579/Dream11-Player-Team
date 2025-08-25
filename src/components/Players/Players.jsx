@@ -5,6 +5,7 @@ import Selected from "../Selected/Selected";
 const Players = ({ players,handleSelected, selectedPlayers }) => {
   const [active, setActive] = useState("A");
 
+  console.log(selectedPlayers)
 
 
 
@@ -12,24 +13,24 @@ const Players = ({ players,handleSelected, selectedPlayers }) => {
 
   return (
     <div>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-7 ">
         <div>
-          {active === "A" && <p>Available Players: {players.length}</p>}
-          {active === "B" && <p>Selected (0 / {players.length})</p>}
+          {active === "A" && <p className="text-[28px] font-bold">Available Players: {players.length}</p>}
+          {active === "B" && <p className="text-[28px] font-bold">Selected ({selectedPlayers.length} / {players.length})</p>}
         </div>
-        <div>
+        <div className="border border-[#131313]/10 rounded-md">
           <button
             onClick={() => setActive("A")}
-            className={`px-4  rounded ${
-              active === "A" ? "bg-amber-400" : "bg-white text-black"
+            className={` text-[16px] font-bold px-8 py-2 rounded-md ${
+              active === "A" ? "bg-[#E7FE29] " : "bg-white text-black"
             }`}
           >
             Available
           </button>
           <button
             onClick={() => setActive("B")}
-            className={`px-4 rounded ${
-              active === "B" ? "bg-amber-400" : "bg-white text-black"
+            className={`text-[16px] font-bold px-8 py-2 rounded-md ${
+              active === "B" ? "bg-[#E7FE29]" : "bg-white text-black"
             }`}
           >
             Selected

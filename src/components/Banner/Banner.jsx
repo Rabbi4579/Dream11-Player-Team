@@ -3,7 +3,7 @@ import shadow from "../../assets/bg-shadow.png";
 import banner from "../../assets/banner-main.png";
 const Banner = ({handleCoins}) => {
   return (
-    <div className="bg-black h-[545px] mb-20">
+    <div className="bg-black h-[545px] mb-15">
       <div
         className=" h-[545px] w-full  bg-cover bg-center flex flex-col justify-center items-center text-center"
         style={{ backgroundImage: `url(${shadow})` }}

@@ -4,6 +4,7 @@ import Banner from "./components/Banner/Banner";
 import Header from "./components/Header/Header";
 import Players from "./components/Players/Players";
 import { addToLS, savedToLS, storedCoins } from "./Utility/savedCoinsToLS";
+import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
   const [players, setPlayers] = useState([]);
@@ -27,28 +28,30 @@ function App() {
     setCoins(newCoins);
     addToLS(defaultCoins);
   };
-
+  
   const handleSelected = (player) => {
     if (!selectedPlayers.find((p) => p.id === player.id)) {
       setSelectedPlayers([...selectedPlayers, player]);
     }
-
+    
     const prevCoin = storedCoins();
     if (prevCoin >= player.price) {
       const remaining = prevCoin - player.price;
       setCoins(remaining);
       savedToLS(remaining);
     }else{
-      alert('You have not enough balance')
+        toast("Wow so easy!");
     }
   };
 
   return (
     <>
       <div className="max-w-[1320px] m-auto mt-8">
+        <ToastContainer />
         <Header coins={coins}></Header>
         <Banner handleCoins={handleCoins}></Banner>
         <Players
+          
           players={players}
           handleSelected={handleSelected}
           selectedPlayers={selectedPlayers}
