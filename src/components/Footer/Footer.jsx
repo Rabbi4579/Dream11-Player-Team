@@ -3,9 +3,9 @@ import logoFooter from "../../assets/logo-footer.png";
 import NewsLetter from "../NewsLetter/NewsLetter";
 const Footer = () => {
   return (
-    <div className="bg-black mt-[300px]  mb-[70px] relative w-cover">
+    <div className="bg-black mt-[300px]  relative w-cover">
       <div className="flex justify-center">
-        <img className="pt-[250px] " src={logoFooter} alt="" />
+        <img className="pt-[250px] mb-[40px] " src={logoFooter} alt="" />
       </div>
       <div className="flex justify-around gap-4">
         <div className="w-[350px] px-[50px]">

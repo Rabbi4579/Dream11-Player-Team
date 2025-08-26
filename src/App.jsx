@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Players from "./components/Players/Players";
 import { addToLS, savedToLS, storedCoins } from "./Utility/savedCoinsToLS";
 import { ToastContainer, toast } from "react-toastify";
-import { addedPlayers, savedPlayers } from "./Utility/storedSelectedPlayers";
+import { addedPlayers, savedPlayers, savedPlayersToLs } from "./Utility/storedSelectedPlayers";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -62,6 +62,17 @@ function App() {
     setSelectedPlayers(savedPlayersLS);
   }, []);
 
+
+  const hdndleDeletePlayer = (player) =>{
+      const storedPlayer = savedPlayers();
+      const existingPlayers = storedPlayer.filter(p => p.id !== player.id);
+      setSelectedPlayers(existingPlayers)
+      savedPlayersToLs(existingPlayers)
+
+  }
+
+
+
   return (
     <>
       <div>
@@ -73,6 +84,7 @@ function App() {
             players={players}
             handleSelected={handleSelected}
             selectedPlayers={selectedPlayers}
+            hdndleDeletePlayer={hdndleDeletePlayer}
           ></Players>
         </div>
           <Footer></Footer>

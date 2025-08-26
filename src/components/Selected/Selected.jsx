@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineDelete } from "react-icons/ai";
 
-const Selected = ({ selectedPlayers }) => {
+const Selected = ({ selectedPlayers, hdndleDeletePlayer }) => {
 
   
 
@@ -23,12 +23,12 @@ const Selected = ({ selectedPlayers }) => {
             </div>
           </div>
           <div>
-             <AiOutlineDelete  className="text-[35px] text-red-600"/>
+             <button onClick={() => hdndleDeletePlayer(player)}><AiOutlineDelete  className="text-[35px] text-red-600"/></button>
 
           </div>
         </div>
       ))}
-      <button className="text-[16px] font-bold rounded-md ring ring-[#131313]/40 ring-offset-4 mb-[200px] px-6 py-2 text-center bg-[#E7FE29]">Add More Player</button>
+      <button  className="text-[16px] font-bold rounded-md ring ring-[#131313]/40 ring-offset-4 mb-[200px] px-6 py-2 text-center bg-[#E7FE29]">Add More Player</button>
     </div>
   );
 };

@@ -24,4 +24,4 @@ const addedPlayers = (player) =>{
    
 }
 
-export {addedPlayers, savedPlayers}
+export {addedPlayers, savedPlayers, savedPlayersToLs}

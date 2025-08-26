@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Availabe from "../Available/Availabe";
 import Selected from "../Selected/Selected";
 
-const Players = ({ players,handleSelected, selectedPlayers }) => {
+const Players = ({ players,handleSelected, selectedPlayers,hdndleDeletePlayer }) => {
   const [active, setActive] = useState("A");
 
   console.log(selectedPlayers)
@@ -38,7 +38,7 @@ const Players = ({ players,handleSelected, selectedPlayers }) => {
         </div>
       </div>
       {active === "A" && <Availabe players ={players} handleSelected={handleSelected}></Availabe>}
-      {active === "B" && <Selected selectedPlayers={selectedPlayers}></Selected>}
+      {active === "B" && <Selected selectedPlayers={selectedPlayers} hdndleDeletePlayer={hdndleDeletePlayer}></Selected>}
     </div>
   );
 };
